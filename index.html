@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@100&family=Poppins:wght@100&display=swap"
+        rel="stylesheet" />
+    <title>Spotify - Your favourite music is here</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="background_img">
+        <nav>
+            <div class="nav1">
+                <img src="./Spotify-Logo-removebg-preview.png" alt="" class="imges" />
+                <h2 class="logo">Spotify</h2>
+                <h2>Music</h2>
+            </div>
+            <div class="nav2">
+                <i class="ri-search-line search"></i>
+                <input id="text_input" type="search" placeholder="Type here to search" />
+            </div>
+            <div class="nav3">
+                <i class="ri-notification-fill"></i>
+                <i class="ri-settings-2-fill"></i>
+            </div>
+        </nav>
+        <!-- navbar-end -->
+        <!-- content-start -->
+        <div class="content">
+            <div class="left-content">
+                <p>Trending New Hits</p>
+                <h1 id="head">In My Feelings</h1>
+                <div class="views">
+                    <div class="views-content">
+                        <h5>Camila Cabello</h5>
+                    </div>
+                    <h5>63million Plays</h5>
+                </div>
+                <div class="heart-content">
+                    <button>Listen Now</button>
+                    <div class="heart"><i class="ri-heart-fill"></i></div>
+                </div>
+                <div class="right-content">
+                    <div class="upper-symbol"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="container">
+                <div class="songList">
+                    <h1>Best of NCS - No Copyright Sounds</h1>
+                    <div class="songItemContainer">
+                        <div class="songItem">
+                            <img alt="1" />
+                            <span class="songName">Let me Love You</span>
+                            <span class="songlistplay"><span class="timestamp">05:34
+                                    <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                        </div>
+                        <div class="songItem">
+                            <img alt="1" />
+                            <span class="songName">Let me Love You</span>
+                            <span class="songlistplay"><span class="timestamp">05:34
+                                    <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                        </div>
+                        <div class="songItem">
+                            <img alt="1" />
+                            <span class="songName">Let me Love You</span>
+                            <span class="songlistplay"><span class="timestamp">05:34
+                                    <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                        </div>
+                        <div class="songItem">
+                            <img alt="1" />
+                            <span class="songName">Let me Love You</span>
+                            <span class="songlistplay"><span class="timestamp">05:34
+                                    <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                        </div>
+                        <div class="songItem">
+                            <img alt="1" />
+                            <span class="songName">Let me Love You</span>
+                            <span class="songlistplay"><span class="timestamp">05:34
+                                    <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                        </div>
+                        <div class="songItem">
+                            <img alt="1" />
+                            <span class="songName">Let me Love You</span>
+                            <span class="songlistplay"><span class="timestamp">05:34
+                                    <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                        </div>
+                        <div class="songItem">
+                            <img alt="1" />
+                            <span class="songName">Let me Love You</span>
+                            <span class="songlistplay"><span class="timestamp">05:34
+                                    <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                        </div>
+                        <div class="songItem">
+                            <img alt="1" />
+                            <span class="songName">Let me Love You</span>
+                            <span class="songlistplay"><span class="timestamp">05:34
+                                    <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                        </div>
+                        <div class="songItem">
+                            <img alt="1" />
+                            <span class="songName">Let me Love You</span>
+                            <span class="songlistplay"><span class="timestamp">05:34
+                                    <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                        </div>
+                        <div class="songItem">
+                            <img alt="1" />
+                            <span class="songName">Let me Love You</span>
+                            <span class="songlistplay"><span class="timestamp">05:34
+                                    <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="songBanner"></div>
+            </div>
+
+            <div id="cover_img" class="ani">
+                <img src="./covers/1.jpg" id="c_img" alt="1" />
+            </div>
+            <div class="bottom">
+                <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100" />
+                <div class="icons">
+                    <!-- fontawesome icons -->
+                    <i class="ctrl fas fa-3x fa-step-backward" id="previous"></i>
+                    <i class="ctrl far fa-3x fa-play-circle" id="masterPlay"></i>
+                    <i class="ctrl fas fa-3x fa-step-forward" id="next"></i>
+                </div>
+                <div class="songInfo songInfoA" id="song_Text_ani">
+                    <!-- <img src="playing.gif" width="42px" alt="" id="gif" /> -->
+                    <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

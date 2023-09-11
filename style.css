@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    /* background-color: aliceblue; */
+    background: url('./back4.jpg') no-repeat;
+    background-size: cover;
+    background-position: top left;
+    color: white;
+    overflow-x: hidden;
+}
+
+.background_img
+{
+    height: 200%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.414);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.765);
+    color: white;
+    padding: 10px 10px;
+}
+
+.nav1
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.nav1 h2{
+    font-weight: 600;
+     font-family: 'Poppins', sans-serif;
+}
+
+.ri-settings-2-fill{
+    padding-right: 200px;
+}
+
+img
+{
+    width: 60px;
+    
+}
+.logo
+{
+    transform: translateX(-28px);
+}
+.nav2 input
+{
+padding: 10px 30px;
+/* border-radius: 5px; */
+border: none;
+color: white;
+border-bottom: 1px solid white;
+background-color:transparent;
+transform: translateX(-25px);
+font-size: 15px;
+font-family: 'Architects Daughter', cursive;
+font-weight: 600;
+
+}
+.nav3 i
+{
+   padding: 25px;
+}
+
+#text_input
+{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Playball', 'cursive';
+}
+/* nav-bar end */
+
+/* content-start */
+.content
+{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 50px; */
+    padding: 40px 60px;
+    
+}
+.left-content p
+{
+   transform: translateX(-20px);
+   font-size: 20px;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+.left-content h1
+{
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.views
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    gap: 20px;
+}
+.views h5
+{   
+    font-size:20px;
+    font-weight: 100; 
+    margin-bottom: 20px; 
+}
+button:active
+{
+    scale: 0.9;
+}
+.views-content h5
+{
+    font-weight: 600;
+}
+button
+{
+    padding: 10px 30px;
+    border: none;
+    background: linear-gradient(45deg, #f7f8f888, #ACBB78);
+    border-radius: 20px;
+    color: white;
+    font-size: 17px;
+    transition: 0.3s ;
+    
+}
+.heart-content{
+    display: flex;
+    align-items: center;
+    gap:30px
+
+}
+.heart{
+    background: linear-gradient(45deg, #f7f8f888, #ACBB78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #5773FF;
+}
+.heart i
+{
+   color: rgba(0, 0, 0, 0.6);
+   font-size: 20px;
+   transition: 0.5s;
+}
+.heart i:hover
+{
+   color: rgba(255, 0, 0, 0.6); 
+}
+
+.heart i:active
+{
+    transform: scale(1.2);
+}
+
+.right-content{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper
+{
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+   height: 400px;
+   overflow-y: scroll;
+   background: linear-gradient(45deg, #334d506c, #cbcaa5bb);
+}
+
+.container::-webkit-scrollbar
+{
+    height: inherit;
+}
+
+
+.bottom{
+
+    height: 400px;
+    width: 350px;
+    background: linear-gradient(45deg, #334d506c, #cbcaa5bb);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#myProgressBar{
+    width: 90%; 
+    height: 2px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #f7f8f888, #ACBB78);
+}
+
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    margin: 30px 20px;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.582);
+    color: black;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.ctrl
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#cover_img img
+{
+    opacity: 85%;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 932px;
+    top: 400px;
+    
+}
+
+.ani img
+{
+    animation: rotate_img 4s  linear infinite;
+}
+@keyframes rotate_img {
+    0%{
+       transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
+  .container{
+    border-radius: 20px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  h1{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .bottom{
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.3);
+  }
+
+ .songInfoA
+ {
+    animation: movingAnimation 12s infinite ease-in-out;
+ }
+
+ @keyframes movingAnimation {
+    0%
+    {
+        transform: translateX(305px);
+    }
+
+    100%
+    {
+        transform: translateX(-305px);
+    }
+ }

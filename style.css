@@ -315,7 +315,7 @@ button {
         margin-top: 0;
         align-items: center;
         justify-content: center;
-        height: 60vh;
+        height: 68vh;
         flex-direction: column;
     }
 
@@ -324,7 +324,7 @@ button {
     }
 
     .bottom {
-        width: 50%;
+        width: 90%;
         margin-top: 20px;
     }
 }
